@@ -14,7 +14,7 @@ var middleware ={
 app.use(middleware.logger);
 //app.use(middleware.requiredAuthentication);
 app.get('/about' ,middleware.requiredAuthentication ,function(req,res){
-	res.send('about Us');
+	res.send('about Us !');
 });
 app.use(express.static(__dirname + '/public'));
 app.listen(PORT,function(){
